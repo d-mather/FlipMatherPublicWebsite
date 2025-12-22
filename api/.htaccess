@@ -1,0 +1,11 @@
+# public_html/api/.htaccess
+RewriteEngine On
+
+# deny direct web access to db.php (belt-and-braces)
+<Files "db.php">
+  Require all denied
+</Files>
+
+# pretty URLs → route everything to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]

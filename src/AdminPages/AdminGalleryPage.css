@@ -1,0 +1,79 @@
+/* Admin Gallery Page Styles - Scoped to .admin-gallery-page */
+
+.admin-gallery-page {
+  min-height: 100vh;
+  background: var(--page-bg, #f9fafb);
+  padding: 2rem 1rem;
+}
+
+.admin-gallery-page .admin-gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-gallery-page h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-primary, #1f2937);
+  background: linear-gradient(135deg, var(--primary-color, #611212), var(--secondary-color, #ffffff7a));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.admin-gallery-page .admin-section {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.admin-gallery-page .admin-section h1 {
+  margin-top: 0;
+}
+
+.admin-gallery-page .admin-section h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: var(--text-primary, #1f2937);
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border-color, #e5e7eb);
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  .admin-gallery-page {
+    background: #111827;
+  }
+
+  .admin-gallery-page .admin-section {
+    background: linear-gradient(135deg, var(--secondary-color, #0000007a), var(--primary-color, #611212));
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .admin-gallery-page .admin-section h2 {
+    color: #f3f4f6;
+    border-bottom-color: #4b5563;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-gallery-page {
+    padding: 1rem 0.5rem;
+  }
+
+  .admin-gallery-page .admin-section {
+    padding: 1.5rem;
+  }
+
+  .admin-gallery-page h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .admin-gallery-page .admin-section h2 {
+    font-size: 1.25rem;
+  }
+}
