@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import { useState } from 'react';
 
 const vaultCards = [
   {
@@ -40,6 +41,8 @@ const strengths = [
 
 
 export default function FoxTrailStepLetter() {
+  const [finished, setFinished] = useState(false);
+
   return (
     <div className="fox-trail-step fox-trail-letter">
       <div className="fox-trail-panel">
@@ -78,9 +81,13 @@ export default function FoxTrailStepLetter() {
           
         <p>I'll wait for you here while you listen to all those links to completion each...</p>
 
-        <p>
-          oh ok den.
-        </p>
+        {!finished ? (
+          <button onClick={() => setFinished(true)}>
+            I have finished all the links
+          </button>
+        ) : (
+          <p>oh ok den.</p>
+        )}
 
         <p style={{ marginBottom: 0 }}>
           With lots of love,
