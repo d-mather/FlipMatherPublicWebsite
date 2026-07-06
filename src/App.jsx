@@ -25,19 +25,25 @@ const FireShowPage      = lazy(() => import('./OtherPages/FireShow.jsx'))
 const EggsPage          = lazy(() => import('./OtherPages/eggs.jsx'))
 const NotFound          = lazy(() => import('./OtherPages/NotFound.jsx'))
 const BetSoftwareCoverLetter    = lazy(() => import('./OtherPages/BetSoftwareCoverLetter.jsx'))
+const FoxTrailPage      = lazy(() => import('./OtherPages/FoxTrail/FoxTrail.jsx'))
 
 const HIDE_HEADER_ROUTES = [
   "/eric",
   "/mackie",
   "/ApiPlayground",
-  "/BetSoftwareCoverLetter"
+  "/BetSoftwareCoverLetter",
+  "/fox-trail"
 ]
+
+function shouldHideChrome(pathname) {
+  return HIDE_HEADER_ROUTES.some((route) => pathname === route || pathname.startsWith(`${route}/`))
+}
 
 function App() {
   const location = useLocation()
   const navigate = useNavigate()
   const { isUserLoggedIn, isUserAdmin, logout, user } = useAuth()
-  const hideHeader = HIDE_HEADER_ROUTES.includes(location.pathname)
+  const hideHeader = shouldHideChrome(location.pathname)
   const isOnHomePage = location.pathname === "/" || location.pathname === "/home"
 
   return (
@@ -123,6 +129,8 @@ function App() {
         <Route path="/mackie" element={<TrainerPage />} />
         <Route path="/ApiPlayground" element={<APIPlay />} />
         <Route path="/BetSoftwareCoverLetter" element={<BetSoftwareCoverLetter />} />
+        <Route path="/fox-trail" element={<FoxTrailPage />} />
+        <Route path="/fox-trail/:stepId" element={<FoxTrailPage />} />
       </Routes>
     </Suspense>
     </>
