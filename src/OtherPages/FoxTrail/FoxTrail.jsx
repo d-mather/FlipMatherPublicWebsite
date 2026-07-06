@@ -76,7 +76,7 @@ function FoxTrailShell({ children, stepIndex, stepCount, title, subtitle, StepIc
 
         <footer className="fox-trail-footer">
           <span>Step {stepIndex + 1} of {stepCount}</span>
-          <span className="fox-trail-footer-glow">Built for a very specific fox.</span>
+          <span className="fox-trail-footer-glow">Built for a very specific Fox.</span>
         </footer>
       </motion.section>
     </main>

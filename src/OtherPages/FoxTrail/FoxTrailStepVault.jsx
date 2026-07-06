@@ -5,7 +5,7 @@ const seals = [
   {
     id: 'heat',
     label: 'First seal',
-    clue: 'the thing that glows inside the console fragment',
+    clue: 'the colour that gold disguises as on some wedding rings',
     options: ['smoke', 'coal', 'rain', 'black', 'amber', 'teal', 'rust', 'white', 'gray', 'blue', 'green', 'red', 'orange', 'yellow', 'purple', 'pink', 'brown', 'indigo', 'violet', 'magenta', 'cyan', 'turquoise', 'lavender', 'peach', 'beige', 'cream', 'tan', 'maroon', 'burgundy', 'navy', 'teal', 'olive', 'lime', 'mint', 'aqua', 'salmon', 'coral', 'fuchsia', 'plum', 'orchid', 'periwinkle', 'sapphire', 'emerald', 'ruby', 'topaz', 'amethyst', 'garnet', 'opal', 'jade', 'onyx', 'quartz', 'amber', 'citrine', 'tourmaline', 'zircon', 'moonstone', 'sunstone', 'lapis lazuli', 'malachite', 'silver', 'azurite', 'hematite', 'pyrite', 'magnetite', 'rhodonite', 'serpentine', 'tiger eye', 'aventurine', 'chalcedony', 'carnelian', 'jasper', 'agate', 'obsidian', 'sodalite', 'fluorite', 'calcite', 'dolomite', 'gypsum', 'halite', 'limestone', 'marble', 'sandstone', 'shale', 'slate', 'basalt', 'granite', 'andesite', 'diorite', 'gabbro', 'rhyolite', 'tuff'],
     correct: 'silver'
   },
@@ -26,7 +26,7 @@ const seals = [
   {
     id: 'home',
     label: 'Fourth seal',
-    clue: 'popular animated movie character names',
+    clue: 'I think you know this one',
     options: ['mickey', 'minnie', 'simba', 'timon', 'woody', 'buzz', 'nemo', 'dory', 'shrek', 'donkey', 'po', 'shifu', 'toothless', 'hiccup', 'manny', 'sid', 'scrat', 'elsa', 'anna', 'olaf', 'moana', 'maui', 'judy', 'nick', 'lightning', 'mater', 'wall-e', 'eve', 'mulan', 'mushu', 'ariel', 'flounder', 'sebastian', 'belle', 'beast', 'aladdin', 'jasmine', 'genie', 'tarzan', 'jane', 'baloo', 'bagheera', 'mowgli', 'cruella', 'peter', 'tinkerbell', 'pinocchio', 'bambi', 'thumper', 'dumbo', 'timothy', 'lady', 'tramp', 'aristocats', 'marie', 'duchess', 'thomas', 'robin', 'marian', 'pocahontas', 'meeko', 'mulan', 'shang', 'lilo', 'stitch', 'cruella', 'ursula', 'rapunzel', 'flynn', 'pascal', 'merida', 'angus', 'raya', 'sisu', 'mirabel', 'isabela', 'antonio', 'miguel', 'hector', 'coco', 'ernesto'],
     correct: 'scrat'
   }

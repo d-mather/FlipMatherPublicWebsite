@@ -12,7 +12,7 @@ export default function FoxTrailStepConsoleKey({ canAdvance, onSolve, onRelock }
 
   useEffect(() => {
     console.log('%cThe trail is warm.', 'color:#ffae54;font-size:16px;font-weight:700')
-    console.log('%cAu', 'color:#7CFFB2;font-size:16px;font-weight:700')
+    console.log('%cAg', 'color:#7CFFB2;font-size:16px;font-weight:700')
     console.log('%c_', 'color:#7CFFB2;font-size:16px;font-weight:700')
     console.log('%cxof reversed', 'color:#7CFFB2;font-size:16px;font-weight:700')
     console.log('%c(concat)', 'color:#7CFFB2;font-size:16px;font-weight:700')

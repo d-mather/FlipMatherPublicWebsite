@@ -46,7 +46,7 @@ export default function FoxTrailStepLetter() {
         <p className="fox-trail-copy fox-trail-glow-accent" style={{ marginBottom: 16 }}>
           What the vault was hiding:
         </p>
-        <div className="fox-trail-vault-grid">
+        <div className="fox-trail-vault-grid-5">
           {vaultCards.map((card) => (
             <div key={card.title} className="fox-trail-card-mini">
               <h3 style={{ marginTop: 0 }}>{card.title}</h3>
