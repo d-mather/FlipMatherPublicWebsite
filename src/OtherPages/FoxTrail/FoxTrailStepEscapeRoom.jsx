@@ -23,7 +23,7 @@ export default function FoxTrailStepEscapeRoom({ nextHref, canAdvance, onSolve, 
       form.foxColor === 'silver' &&
       form.jesus === true &&
       Number(form.number) === 8 &&
-      form.badge.toLowerCase().includes('scrat') &&
+      form.badge.toLowerCase() == 'scrat' &&
       form.foxMood === 'bold' &&
       form.note != ''
     )
@@ -72,7 +72,7 @@ export default function FoxTrailStepEscapeRoom({ nextHref, canAdvance, onSolve, 
         </label>
 
         <label className="fox-trail-field">
-          <span>A squrrel looking for her nut</span>
+          <span>A squirrel looking for her nut</span>
           <input className="fox-trail-input" name="badge" value={form.badge} onChange={handleChange} placeholder="something a fox likes" />
         </label>
 
